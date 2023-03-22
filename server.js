@@ -12,10 +12,6 @@ import userRoutes from './routes/userRoutes.js'
 import orderRoutes from './routes/orderRoutes.js'
 import uploadRoutes from './routes/uploadRoutes.js'
 
-dotenv.config()
-
-connectDB()
-
 const app = express()
 
 app.use(cors({
@@ -24,6 +20,12 @@ app.use(cors({
   "preflightContinue": false,
   "optionsSuccessStatus": 204
 }))
+
+dotenv.config()
+
+connectDB()
+
+
 
 if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'))
