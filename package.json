@@ -1,7 +1,6 @@
 {
   "name": "proshop",
   "version": "1.0.0",
-  "proxy": "https://proshop-mern-s-backend.vercel.app",
   "description": "MERN shopping cart app",
   "main": "server.js",
   "type": "module",
