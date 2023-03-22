@@ -14,9 +14,9 @@ import uploadRoutes from './routes/uploadRoutes.js'
 
 const app = express()
 
-app.use(cors(
-  "Access-Control-Allow-Origin : *"
-))
+app.use(cors({
+  origin: '*'
+}))
 
 dotenv.config()
 
