@@ -1,6 +1,7 @@
 {
   "name": "proshop",
   "version": "1.0.0",
+  "proxy": "http://localhost:8080",
   "description": "MERN shopping cart app",
   "main": "server.js",
   "type": "module",
